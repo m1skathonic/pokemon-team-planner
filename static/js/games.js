@@ -254,5 +254,11 @@ export default {
         "dex_slugs": ["champions_reg_mc"],
         "gen": 9,
         "mega": true,
-    }
+    },
+"lazarus": {
+    "name": "Pokémon Lazarus",
+    "gen": 9,
+    "dex_slugs": ["lazarus"],
+    "mega": true
+}
 };

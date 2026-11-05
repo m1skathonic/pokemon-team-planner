@@ -14,8 +14,15 @@ const getCurrentUrl = () => {
     return url.substring( 0, i );
 };
 const getScriptParent = () => {
-    var src = document.querySelector( "script[type='module']" ).getAttribute( "src" );
-    return src.substring( 0, src.lastIndexOf( "/" ) + 1 );
+    var scripts = document.querySelectorAll( "script[type='module']" );
+    var script = Array.from( scripts ).find(
+        script => script.getAttribute( "src" )?.includes( "static/js/main.js" )
+    );
+    var src = script.getAttribute( "src" );
+    return new URL( src, window.location.href ).href.substring(
+        0,
+        new URL( src, window.location.href ).href.lastIndexOf( "/" ) + 1
+    );
 };
 const normalize = str => str.toLowerCase().normalize( "NFD" ).replace( /\p{Diacritic}/gu, "" );
 const random = ub => Math.random() * ub | 0;
@@ -982,13 +989,18 @@ function isInDex( base_id, form_id ) {
  * @returns {string[]}
  */
 function getPokemonType( pokemon ) {
+    if ( currentGame === "lazarus"
+        && pokemon.lazarus_type != null ) {
+        return pokemon.lazarus_type;
+    }
+
     if ( pokemon.past_type == null
         || ( gameData[ currentGame ].gen >= pokemon.past_type.generation ) ) {
         return pokemon.pokemon_type;
     }
+
     return pokemon.past_type.pokemon_type;
 }
-
 //#endregion
 //#region Filters
 
