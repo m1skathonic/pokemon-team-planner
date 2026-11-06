@@ -259,6 +259,29 @@ export default {
     "name": "Pokémon Lazarus",
     "gen": 9,
     "dex_slugs": ["lazarus"],
-    "mega": true
-}
+    "mega": true,
+    "category": "rom-hack"
+    },
+"pc": {
+    "name": "Pokémon Polished Crystal",
+    "gen": 9,
+    "dex_slugs": ["polished-crystal"],
+    "mega": false,
+    "category": "rom-hack"
+    },
+"unb": {
+    "name": "Pokémon Unbound",
+    "gen": 9,
+     "dex_slugs": ["unb", "national_unb"],
+    "mega": true,
+    "gmax": true,
+    "category": "rom-hack"
+    },
+"gaia": {
+    "name": "Pokémon Gaia",
+    "gen": 9,
+    "dex_slugs": ["gaia"],
+    "mega": true,
+    "category": "rom-hack"
+    },
 };

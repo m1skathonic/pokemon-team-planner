@@ -93,46 +93,68 @@ function buildPage() {
 const GAME_PATH = IMG_PATH + "game/";
 const GAME_TEXT = "Welcome! Select a game and start planning your Pokémon team!";
 
+
 /**
  * Populate the list of games with the available planners.
  * @param {HTMLElement} container
  */
 function populateGameList( container ) {
     const section = document.createElement( "section" );
-    const h2 = document.createElement( "h2" );
-    const p = document.createElement( "p" );
-    const ol = document.createElement( "ol" );
-
     container.querySelector( "header" ).after( section );
-    section.append( h2, p, ol );
     section.classList.add( "head__game-picker" );
-    h2.innerHTML = "Games";
-    p.innerHTML = GAME_TEXT;
-    ol.classList.add( "game-picker" );
 
     const games = Object.entries( gameData );
-    games.forEach( tup => {
-        const [ slug, game ] = tup;
-        const name = getGameName( game );
-        const li = document.createElement( "li" );
-        const a = document.createElement( "a" );
-        const img = document.createElement( "img" );
-        const url = ( game.disabled ? "#" : JS_PATH + "../../plan/#" + slug );
 
-        ol.append( li );
-        li.append( a );
-        a.append( img );
+    const categories = [
+        { id: "official", name: "Official Games" },
+        { id: "rom-hack", name: "ROM Hacks" }
+    ];
 
-        li.classList.add( "game-picker__game" );
-        a.classList.add( "game-picker__button" );
-        a.setAttribute( "title", name );
-        a.setAttribute( "href", url );
-        img.classList.add( "game-picker__game-logo", "game-picker__game-logo_" + slug );
-        img.setAttribute( "alt", name );
-        img.setAttribute( "src", GAME_PATH + slug + ".png" );
+    categories.forEach( category => {
+        const categorySection = document.createElement( "div" );
+        const h2 = document.createElement( "h2" );
+        const ol = document.createElement( "ol" );
 
-        if ( game.disabled ) li.classList.add( "game-picker__game_disabled" );
+categorySection.classList.add( "game-picker__section" );
+        h2.innerHTML = category.name;
+        ol.classList.add( "game-picker" );
+
+        categorySection.append( h2, ol );
+        section.append( categorySection );
+
+        games.forEach( tup => {
+            const [ slug, game ] = tup;
+
+            // Games without a category are treated as official.
+            const gameCategory = game.category || "official";
+
+            if ( gameCategory !== category.id ) return;
+
+            const name = getGameName( game );
+            const li = document.createElement( "li" );
+            const a = document.createElement( "a" );
+            const img = document.createElement( "img" );
+            const url = ( game.disabled ? "#" : JS_PATH + "../../plan/#" + slug );
+
+            ol.append( li );
+            li.append( a );
+            a.append( img );
+
+            li.classList.add( "game-picker__game" );
+            a.classList.add( "game-picker__button" );
+            a.setAttribute( "title", name );
+            a.setAttribute( "href", url );
+            img.classList.add( "game-picker__game-logo", "game-picker__game-logo_" + slug );
+            img.setAttribute( "alt", name );
+            img.setAttribute( "src", GAME_PATH + slug + ".png" );
+
+            if ( game.disabled ) li.classList.add( "game-picker__game_disabled" );
+        });
     });
+
+    const p = document.createElement( "p" );
+    p.innerHTML = GAME_TEXT;
+    section.append( p );
 }
 
 /**
@@ -789,9 +811,20 @@ function populateDex( ol, dexEntry ) {
         const ids = dexEntry.order[ num ].sort( sortIds );
         ids.forEach( id => {
             const [ base_id, form_id] = id;
-            const [ slug, pokemon ] = entries.find(
-                tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
-            );
+           const match = entries.find(
+    tup => tup[ 1 ].base_id === base_id && tup[ 1 ].form_id === form_id
+);
+
+if ( !match ) {
+    console.error( "Pokémon not found in pokemon.js:", {
+        dexNumber: num,
+        base_id,
+        form_id
+    });
+    return;
+}
+
+const [ slug, pokemon ] = match;
             createPokemonEntry( slug, pokemon ).forEach( li => {
                 ol.append( li );
             })
@@ -878,6 +911,20 @@ function completePokemonData() {
         const type2 = type.length === 1
             ? null
             : type[ 1 ];
+        if (
+            typeData[ type1 ] == null
+            || ( type2 != null && typeData[ type2 ] == null )
+        ) {
+            console.error( "Missing type chart entry:", {
+                pokemon: pokemon.name,
+                types: type,
+                type1Data: typeData[ type1 ],
+                type2Data: typeData[ type2 ],
+                game: currentGame,
+                availableTypes: Object.keys( typeData )
+            });
+            return;
+        }
         if ( type2 == null ) {
             // If there is no secondary type, use data from primary type
             pokemon.weaknesses = typeData[ type1 ].weak2 || [];
@@ -988,10 +1035,10 @@ function isInDex( base_id, form_id ) {
  * @param {Object} pokemon
  * @returns {string[]}
  */
+
 function getPokemonType( pokemon ) {
-    if ( currentGame === "lazarus"
-        && pokemon.lazarus_type != null ) {
-        return pokemon.lazarus_type;
+    if ( pokemon.custom_types?.[ currentGame ] != null ) {
+        return pokemon.custom_types[ currentGame ];
     }
 
     if ( pokemon.past_type == null
@@ -1001,6 +1048,7 @@ function getPokemonType( pokemon ) {
 
     return pokemon.past_type.pokemon_type;
 }
+
 //#endregion
 //#region Filters
 

@@ -120,6 +120,9 @@ export default {
         "form_id": 0,
         "name": "Charizard",
         "pokemon_type": [ "fire", "flying" ],
+        "custom_types": {
+            "pc": [ "fire", "dragon" ]
+        },
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -229,6 +232,9 @@ export default {
         "form_id": 0,
         "name": "Blastoise",
         "pokemon_type": [ "water" ],
+        "custom_types": {
+            "pc": [ "water", "steel" ]
+        },
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -303,6 +309,9 @@ export default {
         "form_id": 0,
         "name": "Butterfree",
         "pokemon_type": [ "bug", "flying" ],
+        "custom_types": {
+            "pc": [ "bug", "psychic" ]
+        },
         "egg_group": [ "bug" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -533,7 +542,9 @@ export default {
         "form_id": 0,
         "name": "Ekans",
         "pokemon_type": [ "poison" ],
-        "lazarus_type": [ "poison", "dark" ],
+        "custom_types": {
+          "lazarus": [ "poison", "dark" ],
+        },        
         "egg_group": [ "field", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -549,7 +560,9 @@ export default {
         "form_id": 0,
         "name": "Arbok",
         "pokemon_type": [ "poison" ],
-        "lazarus_type": [ "poison", "dark" ],
+        "custom_types": {
+          "lazarus": [ "poison", "dark" ]
+        },
         "egg_group": [ "field", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -617,7 +630,9 @@ export default {
         "name": "Raichu",
         "form_name": "Mega Raichu X",
         "pokemon_type": [ "electric" ],
-        "lazarus_type": [ "electric", "fighting" ],
+        "custom_types": {
+          "lazarus":  [ "electric", "fighting" ],
+        },
         "egg_group": [ "field", "fairy" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -890,7 +905,9 @@ export default {
         "form_id": 0,
         "name": "Vulpix",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "fire", "fairy" ],
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
@@ -906,8 +923,9 @@ export default {
         "name": "Vulpix",
         "form_name": "Alolan Form",
         "pokemon_type": [ "ice" ],
-        "lazarus_type": [ "ice", "fairy" ],
-        "egg_group": [ "field" ],
+        "custom_types": {
+          "lazarus":  [ "ice", "fairy" ],
+        },        "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
         "shape": 5,
@@ -921,7 +939,10 @@ export default {
         "form_id": 0,
         "name": "Ninetales",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "fire", "fairy" ],
+          "pc":  [ "fire", "ghost" ]
+        },        
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
@@ -1073,7 +1094,9 @@ export default {
         "form_id": 0,
         "name": "Parasect",
         "pokemon_type": [ "bug", "grass" ],
-        "lazarus_type": [ "bug", "ghost" ],
+        "custom_types": {
+          "lazarus":  [ "bug", "ghost" ],
+        },
         "egg_group": [ "bug", "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -1276,6 +1299,9 @@ export default {
         "form_id": 0,
         "name": "Golduck",
         "pokemon_type": [ "water" ],
+        "custom_types": {
+            "pc": [ "water", "psychic" ]
+        },
         "egg_group": [ "water_1", "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -1811,6 +1837,9 @@ export default {
         "form_id": 0,
         "name": "Rapidash",
         "pokemon_type": [ "fire" ],
+        "custom_types": {
+            "pc": [ "fire", "fairy" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -1997,7 +2026,9 @@ export default {
         "form_id": 0,
         "name": "Doduo",
         "pokemon_type": [ "normal", "flying" ],
-        "lazarus_type": [ "ground", "flying" ],
+        "custom_types": {
+          "lazarus":  [ "ground", "flying" ],
+        },
         "egg_group": [ "flying" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -2013,7 +2044,9 @@ export default {
         "form_id": 0,
         "name": "Dodrio",
         "pokemon_type": [ "normal", "flying" ],
-        "lazarus_type": [ "ground", "flying" ],
+        "custom_types": {
+          "lazarus":  [ "ground", "flying" ],
+        },
         "egg_group": [ "flying" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -2028,7 +2061,9 @@ export default {
         "form_id": 0,
         "name": "Seel",
         "pokemon_type": [ "water" ],
-         "lazarus_type": [ "water", "ice" ],
+        "custom_types": {
+          "lazarus":  [ "water", "ice" ],
+        },
         "egg_group": [ "water_1", "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -2259,7 +2294,9 @@ export default {
         "form_id": 0,
         "name": "Hypno",
         "pokemon_type": [ "psychic" ],
-        "lazarus_type": [ "psychic", "dark" ],
+        "custom_types": {
+          "lazarus":  [ "psychic", "dark" ],
+        },
         "egg_group": [ "human_like" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -3502,7 +3539,9 @@ export default {
         "form_id": 0,
         "name": "Dragonair",
         "pokemon_type": [ "dragon" ],
-        "lazarus_type": [ "dragon", "water" ],
+        "custom_types": {
+          "lazarus":  [ "dragon", "water" ],
+        },
         "egg_group": [ "water_1", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -3681,7 +3720,11 @@ export default {
         "form_id": 0,
         "name": "Meganium",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "grass", "fairy" ],
+          "pc":  [ "grass", "fairy" ],
+        },
+        "pc_type": [ "grass", "fairy" ],
         "egg_group": [ "monster", "grass" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 1,
@@ -3703,7 +3746,9 @@ export default {
         "name": "Meganium",
         "form_name": "Mega Meganium",
         "pokemon_type": [ "grass"],
-        "lazarus_type": [ "grass", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "grass", "fairy" ],
+        },
         "egg_group": [ "monster", "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -3753,7 +3798,11 @@ export default {
         "form_id": 0,
         "name": "Typhlosion",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "ground" ],
+        "custom_types": {
+          "lazarus":  [ "fire", "ground" ],
+          "pc":  [ "fire", "ground" ],
+        },
+        "pc_type": [ "fire", "ground" ],
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -3788,7 +3837,9 @@ export default {
         "name": "Typhlosion",
         "form_name": "Mega Typhlosion",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "ground" ],
+        "custom_types": {
+          "lazarus":  [ "fire", "ground" ],
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -3854,7 +3905,10 @@ export default {
         "form_id": 0,
         "name": "Feraligatr",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "dark" ],
+        "custom_types": {
+          "lazarus":  [ "water", "dark" ],
+          "pc":  [ "water", "dark" ],
+        },
         "egg_group": [ "monster", "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -3948,7 +4002,11 @@ export default {
         "form_id": 0,
         "name": "Noctowl",
         "pokemon_type": [ "normal", "flying" ],
-        "lazarus_type": [ "ghost", "flying" ],
+        "custom_types": {
+          "lazarus":  [ "ghost", "flying" ],
+          "pc":  [ "ghost", "flying" ],
+        },
+        "pc_type": [ "ghost", "flying" ],
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -3995,6 +4053,9 @@ export default {
         "form_id": 0,
         "name": "Ledian",
         "pokemon_type": [ "bug", "flying" ],
+        "custom_types": {
+            "pc": [ "bug", "fighting" ]
+        },
         "egg_group": [ "bug" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -4028,6 +4089,9 @@ export default {
         "form_id": 0,
         "name": "Ariados",
         "pokemon_type": [ "bug", "poison" ],
+        "custom_types": {
+            "pc": [ "bug", "dark" ]
+        },
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -4248,6 +4312,9 @@ export default {
         "form_id": 0,
         "name": "Ampharos",
         "pokemon_type": [ "electric" ],
+        "custom_types": {
+            "pc": [ "electric", "dragon" ]
+        },
         "egg_group": [ "monster", "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -4284,6 +4351,9 @@ export default {
         "form_id": 0,
         "name": "Bellossom",
         "pokemon_type": [ "grass" ],
+        "custom_types": {
+            "pc": [ "grass", "fairy" ]
+        },
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -4357,7 +4427,10 @@ export default {
         "form_id": 0,
         "name": "Politoed",
         "pokemon_type": [ "water" ],
-         "lazarus_type": [ "water", "normal" ],
+        "custom_types": {
+          "lazarus":  [ "water", "normal" ],
+          "pc":  [ "water", "grass" ],
+        },
         "egg_group": [ "water_1" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -4457,6 +4530,9 @@ export default {
         "form_id": 0,
         "name": "Sunflora",
         "pokemon_type": [ "grass" ],
+        "custom_types": {
+            "pc": [ "grass", "fire" ]
+        },
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -5070,6 +5146,9 @@ export default {
         "form_id": 0,
         "name": "Girafarig",
         "pokemon_type": [ "normal", "psychic" ],
+        "custom_types": {
+            "pc": [ "psychic", "dark" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -5118,6 +5197,9 @@ export default {
         "form_id": 0,
         "name": "Dunsparce",
         "pokemon_type": [ "normal" ],
+        "custom_types": {
+            "pc": [ "normal", "ground" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -5501,7 +5583,10 @@ export default {
         "name": "Corsola",
         "form_name": "Galarian Form",
         "pokemon_type": [ "ghost" ],
-        "lazarus_type": [ "ghost", "rock" ],
+        "custom_types": {
+          "lazarus":  [ "ghost", "rock" ],
+          "pc":  [ "ghost", "rock" ],
+        },
         "egg_group": [ "water_1", "water_3" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
@@ -5536,7 +5621,10 @@ export default {
         "form_id": 0,
         "name": "Octillery",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "fire" ],
+        "custom_types": {
+          "lazarus":  [ "water", "fire" ],
+          "pc":  [ "water", "fire" ],
+        },
         "egg_group": [ "water_1", "water_2" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -6016,6 +6104,9 @@ export default {
         "form_id": 0,
         "name": "Lugia",
         "pokemon_type": [ "psychic", "flying" ],
+        "custom_types": {
+            "pc": [ "water", "flying" ]
+        },
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
@@ -6061,6 +6152,9 @@ export default {
         "form_id": 0,
         "name": "Celebi",
         "pokemon_type": [ "psychic", "grass" ],
+        "custom_types": {
+            "pc": [ "grass", "fairy" ]
+        },
         "egg_group": [ "undiscovered" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
@@ -6863,7 +6957,9 @@ export default {
         "form_id": 0,
         "name": "Ninjask",
         "pokemon_type": [ "bug", "flying" ],
-        "lazarus_type": [ "bug", "dark" ],
+        "custom_types": {
+          "lazarus":  [ "bug", "dark" ],
+        },
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -7724,7 +7820,9 @@ export default {
         "form_id": 0,
         "name": "Swablu",
         "pokemon_type": [ "normal", "flying" ],
-        "lazarus_type": [ "flying", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "flying", "fairy" ],
+        },
         "egg_group": [ "flying", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -7740,7 +7838,9 @@ export default {
         "form_id": 0,
         "name": "Altaria",
         "pokemon_type": [ "dragon", "flying" ],
-        "lazarus_type": [ "dragon", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "dragon", "fairy" ],
+        },
         "egg_group": [ "flying", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -8129,7 +8229,9 @@ export default {
         "form_id": 0,
         "name": "Shuppet",
         "pokemon_type": [ "ghost" ],
-        "lazarus_type": [ "ghost", "normal" ],
+        "custom_types": {
+          "lazarus":  [ "ghost", "normal" ],
+        },
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -8145,7 +8247,9 @@ export default {
         "form_id": 0,
         "name": "Banette",
         "pokemon_type": [ "ghost" ],
-        "lazarus_type": [ "ghost", "normal" ],
+        "custom_types": {
+          "lazarus":  [ "ghost", "normal" ],
+        },
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -8161,7 +8265,9 @@ export default {
         "name": "Banette",
         "form_name": "Mega Banette",
         "pokemon_type": [ "ghost" ],
-        "lazarus_type": [ "ghost", "dark" ],
+        "custom_types": {
+          "lazarus":  [ "ghost", "dark" ],
+        },
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -8459,7 +8565,9 @@ export default {
         "form_id": 0,
         "name": "Huntail",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "dragon" ],
+        "custom_types": {
+          "lazarus":  [ "water", "dragon" ],
+        },
         "egg_group": [ "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -8479,7 +8587,9 @@ export default {
         "form_id": 0,
         "name": "Gorebyss",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "fairy" ],
+        "custom_types": {
+          "lazarus":  [ "water", "fairy" ],
+        },
         "egg_group": [ "water_1" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -9724,7 +9834,9 @@ export default {
         "name": "Cherrim",
         "form_name": "Overcast Form",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "fire" ],
+        "custom_types": {
+            "lazarus": [ "grass", "fire" ]
+        },
         "egg_group": [ "fairy", "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -9740,7 +9852,9 @@ export default {
         "name": "Cherrim",
         "form_name": "Sunshine Form",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "fire" ],
+        "custom_types": {
+            "lazarus": [ "grass", "fire" ]
+        },
         "egg_group": [ "fairy", "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -9927,6 +10041,9 @@ export default {
         "form_id": 0,
         "name": "Mismagius",
         "pokemon_type": [ "ghost" ],
+        "custom_types": {
+            "pc": [ "ghost", "fairy" ]
+        },
         "egg_group": [ "amorphous" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -10440,7 +10557,9 @@ export default {
         "form_id": 0,
         "name": "Finneon",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "fairy" ],
+        "custom_types": {
+            "lazarus": [ "water", "fairy" ]
+        },
         "egg_group": [ "water_2" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -10462,7 +10581,9 @@ export default {
         "form_id": 0,
         "name": "Lumineon",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "fairy" ],
+        "custom_types": {
+            "lazarus": [ "water", "fairy" ]
+        },
         "egg_group": [ "water_2" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -10607,6 +10728,9 @@ export default {
         "form_id": 0,
         "name": "Rhyperior",
         "pokemon_type": [ "ground", "rock" ],
+        "custom_types": {
+            "pc": [ "steel", "rock" ]
+        },
         "egg_group": [ "monster", "field" ],
         "gender": [ "fd", "md" ],
         "gender_ratio": 4,
@@ -10646,6 +10770,9 @@ export default {
         "form_id": 0,
         "name": "Electivire",
         "pokemon_type": [ "electric" ],
+        "custom_types": {
+            "pc": [ "electric", "fighting" ]
+        },
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
         "gender_ratio": 2,
@@ -10664,6 +10791,9 @@ export default {
         "form_id": 0,
         "name": "Magmortar",
         "pokemon_type": [ "fire" ],
+        "custom_types": {
+            "pc": [ "fire", "fighting" ]
+        },
         "egg_group": [ "human_like" ],
         "gender": [ "mf" ],
         "gender_ratio": 2,
@@ -10697,7 +10827,10 @@ export default {
         "form_id": 0,
         "name": "Yanmega",
         "pokemon_type": [ "bug", "flying" ],
-        "lazarus_type": [ "bug", "dragon" ],
+        "custom_types": {
+            "lazarus": [ "bug", "dragon" ],
+            "pc": ["bug", "dragon" ]
+        },
         "egg_group": [ "bug" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -12085,7 +12218,9 @@ export default {
         "form_id": 0,
         "name": "Pansage",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "normal" ],
+        "custom_types": {
+            "lazarus": [ "grass", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -12101,7 +12236,9 @@ export default {
         "form_id": 0,
         "name": "Simisage",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "normal" ],
+        "custom_types": {
+            "lazarus": [ "grass", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -12116,7 +12253,9 @@ export default {
         "form_id": 0,
         "name": "Pansear",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "normal" ],
+        "custom_types": {
+            "lazarus": [ "fire", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -12132,7 +12271,9 @@ export default {
         "form_id": 0,
         "name": "Simisear",
         "pokemon_type": [ "fire" ],
-        "lazarus_type": [ "fire", "normal" ],
+        "custom_types": {
+            "lazarus": [ "fire", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -12147,7 +12288,9 @@ export default {
         "form_id": 0,
         "name": "Panpour",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "normal" ],
+        "custom_types": {
+            "lazarus": [ "water", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -12169,7 +12312,9 @@ export default {
         "form_id": 0,
         "name": "Simipour",
         "pokemon_type": [ "water" ],
-        "lazarus_type": [ "water", "normal" ],
+        "custom_types": {
+            "lazarus": [ "water", "normal" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -15691,7 +15836,9 @@ export default {
         "form_id": 0,
         "name": "Gogoat",
         "pokemon_type": [ "grass" ],
-        "lazarus_type": [ "grass", "ground" ],
+        "custom_types": {
+            "lazarus": [ "grass", "ground" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -16398,7 +16545,9 @@ export default {
         "name": "Tyrantrum",
         "form_name": "Mega Tyrantrum", 
         "pokemon_type": [ "rock", "dragon" ],
-        "lazarus_type": [ "ice", "dragon" ],
+        "custom_types": {
+            "lazarus": [ "ice", "dragon" ]
+        },
         "egg_group": [ "monster", "dragon" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -16445,7 +16594,9 @@ export default {
         "name": "Aurorus",
         "form_name": "Mega Aurorus",
         "pokemon_type": [ "rock", "ice" ],
-        "lazarus_type": [ "fairy", "ice" ],
+        "custom_types": {
+            "lazarus": [ "fairy", "ice" ]
+        },
         "egg_group": [ "monster" ],
         "gender": [ "mf" ],
         "gender_ratio": 1,
@@ -17221,7 +17372,9 @@ export default {
         "name": "Toucannon",
         "form_name": "Mega Toucannon",
         "pokemon_type": [ "normal", "flying" ],
-        "lazarus_type": [ "fire", "flying" ],
+        "custom_types": {
+            "lazarus": [ "fire", "flying" ]
+        },
         "egg_group": [ "flying" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -17476,7 +17629,9 @@ export default {
         "name": "Lycanroc",
         "form_name": "Midnight Form",
         "pokemon_type": [ "rock" ],
-        "lazarus_type": [ "rock", "dark" ],
+        "custom_types": {
+            "lazarus": [ "rock", "dark" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -17491,7 +17646,9 @@ export default {
         "name": "Lycanroc",
         "form_name": "Dusk Form",
         "pokemon_type": [ "rock" ],
-        "lazarus_type": [ "rock", "fighting" ],
+        "custom_types": {
+            "lazarus": [ "rock", "fighting" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -17764,7 +17921,9 @@ export default {
         "form_id": 0,
         "name": "Comfey",
         "pokemon_type": [ "fairy" ],
-        "lazarus_type": [ "fairy", "grass" ],
+        "custom_types": {
+            "lazarus": [ "fairy", "grass" ]
+        },
         "egg_group": [ "grass" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
@@ -17791,7 +17950,9 @@ export default {
         "form_id": 0,
         "name": "Passimian",
         "pokemon_type": [ "fighting" ],
-        "lazarus_type": [ "normal", "fighting" ],
+        "custom_types": {
+            "lazarus": [ "normal", "fighting" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -19730,7 +19891,10 @@ export default {
         "form_id": 0,
         "name": "Cursola",
         "pokemon_type": [ "ghost" ],
-        "lazarus_type": [ "ghost", "rock" ],
+        "custom_types": {
+            "lazarus": [ "ghost", "rock" ],
+            "pc": [ "ghost", "rock" ]
+        },
         "egg_group": [ "water_1", "water_3" ],
         "gender": [ "mf" ],
         "gender_ratio": 6,
@@ -19950,7 +20114,9 @@ export default {
         "form_id": 0,
         "name": "Falinks",
         "pokemon_type": [ "fighting" ],
-        "lazarus_type": [ "fighting", "bug" ],
+        "custom_types": {
+            "lazarus": [ "fighting", "bug" ]
+        },
         "egg_group": [ "fairy", "mineral" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
@@ -19965,7 +20131,9 @@ export default {
         "name": "Falinks",
         "form_name": "Mega Falinks",
         "pokemon_type": [ "fighting" ],
-        "lazarus_type": [ "fighting", "steel" ],
+        "custom_types": {
+            "lazarus": [ "fighting", "steel" ]
+        },
         "egg_group": [ "fairy", "mineral" ],
         "gender": [ "uk" ],
         "gender_ratio": -1,
@@ -20120,7 +20288,9 @@ export default {
         "form_id": 0,
         "name": "Cufant",
         "pokemon_type": [ "steel" ],
-         "lazarus_type": [ "steel", "normal" ],
+        "custom_types": {
+            "lazarus": [ "steel", "normal" ]
+        },
         "egg_group": [ "field", "mineral" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -20135,7 +20305,9 @@ export default {
         "form_id": 0,
         "name": "Copperajah",
         "pokemon_type": [ "steel" ],
-        "lazarus_type": [ "steel", "normal" ],
+        "custom_types": {
+            "lazarus": [ "steel", "normal" ]
+        },
         "egg_group": [ "field", "mineral" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -20151,7 +20323,9 @@ export default {
         "name": "Copperajah",
         "form_name": "Mega Copperajah",
         "pokemon_type": [ "steel" ],
-        "lazarus_type": [ "steel", "normal" ],
+        "custom_types": {
+            "lazarus": [ "steel", "normal" ]
+        },
         "egg_group": [ "field", "mineral" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -21644,7 +21818,9 @@ export default {
         "name": "Cyclizar",
         "form_name": "Mega Cyclizar S",
         "pokemon_type": [ "dragon", "normal" ],
-        "lazarus_type": [ "dragon", "fighting" ],
+        "custom_types": {
+            "lazarus": [ "dragon", "fighting" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -21661,7 +21837,9 @@ export default {
         "name": "Cyclizar",
         "form_name": "Mega Cyclizar V",
         "pokemon_type": [ "dragon", "normal" ],
-        "lazarus_type": [ "dragon", "electric" ],
+        "custom_types": {
+            "lazarus": [ "dragon", "electric" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -21946,6 +22124,9 @@ export default {
         "form_id": 0,
         "name": "Farigiraf",
         "pokemon_type": [ "normal", "psychic" ],
+        "custom_types": {
+            "pc": [ "psychic", "dark" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -21960,6 +22141,9 @@ export default {
         "name": "Dudunsparce",
         "form_name": "Two-Segment Form",
         "pokemon_type": [ "normal" ],
+        "custom_types": {
+            "pc": [ "normal", "dragon" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,
@@ -21974,6 +22158,9 @@ export default {
         "name": "Dudunsparce",
         "form_name": "Three-Segment Form",
         "pokemon_type": [ "normal" ],
+        "custom_types": {
+            "pc": [ "normal", "dragon" ]
+        },
         "egg_group": [ "field" ],
         "gender": [ "mf" ],
         "gender_ratio": 4,

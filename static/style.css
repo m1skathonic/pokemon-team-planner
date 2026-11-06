@@ -42,9 +42,6 @@ h2 {
     text-align: left;
     display: inline-block;
     margin: 0 0 0.5em;
-    position: absolute;
-    top: -0.75em;
-    left: 1em;
 }
 
 h3 {
@@ -119,6 +116,24 @@ article section {
 
 .head__game-picker {
     padding: 2em;
+}
+
+.game-picker__section {
+    display: flow-root;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.game-picker__section h2 {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+.game-picker__section + .game-picker__section {
+    border-top: 2px solid #d9d9d9;
+    padding-top: 2rem;
 }
 
 .head__game-button {
@@ -310,6 +325,30 @@ article section {
     margin: 0.25rem 0;
 }
 
+.game-picker__game-logo_pc {
+    width: 14rem;
+    height: auto;
+    max-height: 5rem;
+    object-fit: contain;
+    margin: 0.25rem 0;
+}
+
+.game-picker__game-logo_unb {
+    width: 14rem;
+    height: auto;
+    max-height: 5rem;
+    object-fit: contain;
+    margin: 0.25rem 0;
+}
+
+.game-picker__game-logo_gaia {
+    width: 14rem;
+    height: auto;
+    max-height: 5rem;
+    object-fit: contain;
+    margin: 0.25rem 0;
+}
+
 /* Lazarus selected-game heading logo */
 .head__game-logo_lazarus {
     width: 9.5rem;
@@ -323,6 +362,49 @@ article section {
     background-position: center;
     text-indent: -999em;
 }
+
+/* Polished Crystal selected-game heading logo */
+.head__game-logo_pc {
+    width: 9.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999em;
+}
+
+/* Unbound selected-game heading logo */
+.head__game-logo_unb {
+    width: 9.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999em;
+}
+
+/* Gaia selected-game heading logo */
+.head__game-logo_gaia {
+    width: 9.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999em;
+}
+
 
 /* FAQ */
 
